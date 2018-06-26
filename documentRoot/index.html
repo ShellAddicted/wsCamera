@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>wsCamera| Feed</title>
+        <script src="js/wsCamera.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <div style="text-align:center;">
+            <h1>wsCamera Feed</h1>
+            <img id="feedFrame" src="#" style="width:50%;"/>
+            </div>
+        </div>
+    <script>
+        var wc = new wsCamera("ws://"+location.host+"/ws","feedFrame");
+        wc.start();
+    </script>
+    </body>
+</html>
