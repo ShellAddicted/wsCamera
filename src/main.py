@@ -101,7 +101,7 @@ def main():
         camera.rotation = 180
         camera.start_recording(StreamingOutput(), format='mjpeg')
 
-        th = threading.Thread(target=dispatcherThread);
+        th = threading.Thread(target=dispatcherThread)
         th.start()
 
         handlers = [(r"/ws", WebSocket), (r"/(.*)", tornado.web.StaticFileHandler, {"path": "./documentRoot",
@@ -111,6 +111,7 @@ def main():
 
         try:
             tornado.ioloop.IOLoop.instance().start()
+            logging.info("Ready")
         except KeyboardInterrupt:
             logging.info("CTRL+C detected.")
             tornado.ioloop.IOLoop.instance().stop()
