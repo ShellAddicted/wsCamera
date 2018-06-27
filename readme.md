@@ -12,8 +12,8 @@ open in your Web Broweser:
 http://<RASPBERRY_PI_IP>:8000/ws
 
 ### Default Settings
-Default HTTP port is 8080
-Frames resolution: 640x480
-FPS: 30
+- Default HTTP port -> 8000
+- Frame resolution -> 640x480px @ 30 FPS
+
 
 to edit this settings you can edit [src/main.py](https://github.com/ShellAddicted/wsCamera/blob/master/src/main.py)
