@@ -5,6 +5,7 @@ Live video streaming over WebSockets (Currently only Raspberry Pi Camera is supp
 ```bash
 $ git clone https://github.com/ShellAddicted/wsCamera.git
 $ cd wsCamera
+$ pip3 install -r requirements.txt
 $ python3 src/main.py
 ```
 then
